@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News Article</title>
+  <style>
+    /* Body Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('https://www.shutterstock.com/image-vector/seamless-pattern-collage-newspaper-magazine-600nw-2171308273.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    /* Overlay for better readability */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+    }
+
+    /* Main container */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+    }
+
+    /* Main article section */
+    .main-article {
+      flex: 3;
+      padding-right: 20px;
+    }
+
+    .main-article h1 {
+      font-size: 3.5em;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    .article-meta {
+      font-size: 1.1em;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .article-content {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    /* Sidebar with related articles */
+    .sidebar {
+      flex: 1;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar h2 {
+      font-size: 1.8em;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Author Bio Section */
+    .author-bio {
+      background-color: #e9f7f7;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    .author-bio img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-right: 15px;
+    }
+
+    .author-bio h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    .author-bio p {
+      margin-top: 10px;
+      color: #555;
+    }
+
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .main-article {
+        padding-right: 0;
+      }
+
+      .sidebar {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <div class="container">
+      <!-- Main Article Section -->
+      <div class="main-article">
+        <h1>The Future of Technology: What's Next?</h1>
+        <div class="article-meta">
+          <span>By XYZ | Published on: September 24, 2025</span>
+        </div>
+        <div class="article-content">
+          <p>In recent years, technology has evolved at a rapid pace. From artificial intelligence to 
+            quantum computing, the future looks bright for innovation. As we look ahead, 
+            it's important to understand the potential impact these technologies will have on 
+            our daily lives. In this article, we'll explore the most exciting trends in the 
+            tech world and what they mean for society.</p>
+
+          <p>Artificial Intelligence (AI) is already reshaping industries like healthcare, finance, and transportation. Experts 
+            predict that AI will become even more integrated into our daily lives, from voice assistants to fully autonomous vehicles.But 
+            as AI continues to advance, questions about ethics, privacy, and job displacement remain at the forefront of discussions.</p>
+
+          <p>Another exciting area is Quantum Computing. While it's still in its early stages, quantum computing has the potential to
+            revolutionize data processing and problem-solving. With the ability to perform complex calculations in seconds, quantum 
+            computers could solve problems that are currently impossible for classical computers.</p>
+
+          <p>As these technologies evolve, governments and companies will need to address the challenges that come with them, such as 
+            regulation, security, and the social impact on workers. The future of technology holds both promise and uncertainty, but one 
+            thing is clear — the tech landscape will never be the same.</p>
+        </div>
+
+        <!-- Author Bio Section -->
+        <div class="author-bio">
+          <div style="display: flex; align-items: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfo7eWhD67yhHoZ2Ah-fZgfA8_B2KO0q2VXQ&s" alt="Author Photo">
+            <div>
+              <h3>XYZ</h3>
+              <p>XYZ is a technology writer with over 10 years of experience covering emerging tech trends, AI, and quantum computing. She is passionate about the future of technology and its impact on society.</p>
+            </div>
+          </div>
+        </div>
+
+        
+
+      <!-- Sidebar with Related Articles -->
+      <div class="sidebar">
+        <h2>Related Articles</h2>
+        <ul>
+          <li><a href="#">The Rise of AI: Pros and Cons</a></li>
+          <li><a href="#">Quantum Computing: A Beginner's Guide</a></li>
+          <li><a href="#">How Blockchain Will Change the Future of Finance</a></li>
+          <li><a href="#">Top 10 Emerging Tech Trends to Watch in 2025</a></li>
+          <li><a href="#">The Impact

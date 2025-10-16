@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Menu</title>
+  <style>
+    /* Background image animation */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', sans-serif;
+      color: rgb(255, 253, 253);
+      overflow-x: hidden;
+      background: url('https://media.istockphoto.com/id/488210514/photo/art-italian-homemade-menu-food-background-restaurant-week.jpg?s=612x612&w=0&k=20&c=MfKY9GL9y3cgsGuKokAiq59AJYQONXOosnqQcIAKsbw=') no-repeat center center fixed;
+      background-size: cover;
+      animation: zoom 30s infinite alternate ease-in-out;
+    }
+
+    @keyframes zoom {
+      0% {
+        background-size: 100%;
+      }
+      100% {
+        background-size: 110%;
+      }
+    }
+
+    /* Overlay to make text readable */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px 20px;
+      min-height: 100vh;
+    }
+
+    .menu {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 30px;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .menu-section {
+      margin-bottom: 40px;
+    }
+
+    .menu-item {
+      margin: 15px 0;
+    }
+
+    .item-name {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .item-desc {
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    .item-price {
+      font-size: 1.2em;
+      color: #f1c40f;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .item-name {
+        font-size: 1.2em;
+      }
+
+      .item-price {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="menu">
+
+
+  <h1>Delicious Bites Restaurant</h1>
+  <div class="menu">
+    <div class="category">
+      <h1>Appetizers</h1>
+      <div class="item">
+        <div>
+          <div class="item-name">Bruschetta</div>
+          <div class="item-desc">Grilled bread topped with fresh tomatoes, garlic, and basil</div>
+        </div>
+        <div class="price">₹256.50</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">Stuffed Mushrooms</div>
+          <div class="item-desc">Mushrooms filled with cheese and herbs, baked to perfection</div>
+        </div>
+        <div class="price">₹463.00</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h1>Main Courses</h1>
+      <div class="item">
+        <div>
+          <div class="item-name">Spinach & ricotta gnocchi</div>
+          <div class="item-desc">Fresh Spinach & ricotta gnocchi</div>
+        </div>
+        <div class="price">₹350.95</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">Chicken Alfredo</div>
+          <div class="item-desc">Creamy Alfredo pasta topped with grilled chicken breast</div>
+        </div>
+        <div class="price">₹1150.5</div>
+      </div>
+    </div>
+      <div class="item">
+        <div>
+          <div class="item-name">Simple mushroom curry</div>
+          <div class="item-desc">garlicky mushrooms in a rich tomato masala spiced</div>
+        </div>
+        <div class="price">₹380.5</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h1>Desserts</h1>
+      <div class="item">
+        <div>
+          <div class="item-name">Tiramisu</div>
+          <div class="item-desc">Classic Italian dessert with coffee-soaked ladyfingers and mascarpone</div>
+        </div>
+        <div class="price">₹643.45</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">Chocolate Lava Cake</div>
+          <div class="item-desc">Warm chocolate cake with a gooey molten center</div>
+        </div>
+        <div class="price">₹665.50</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>Drinks</h3>
+      <div class="item">
+        <div>
+          <div class="item-name">Fresh Lemonade</div>
+          <div class="item-desc">Made with freshly squeezed lemons</div>
+        </div>
+        <div class="price">₹266.25</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">Iced Tea</div>
+          <div class="item-desc">Brewed tea served chilled with lemon</div>
+        </div>
+        <div class="price">₹244</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

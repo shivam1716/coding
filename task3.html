@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MobileZone - Your Mobile Shop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      color: #333;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 span {
+      color: #00ffcc;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product {
+      background-color: white;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      color: #1f78d1;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #1f78d1;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    a.button:hover {
+      background-color: #145a96;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .product-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1><u>Welcome to <span>MobileZone</span></u></h1>
+    <p><strong>Your ultimate destination for <em>latest smartphones</em> and accessories</strong></p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#mobiles">Mobiles</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Mobile Products Section -->
+  <section id="mobiles">
+    <h2><b>Our Top Mobile Phones</b></h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="https://www.designinfo.in/wp-content/uploads/2024/01/Samsung-Galaxy-S24-Ultra-256GB-Titanium-Gray-1.webp" alt="Galaxy S24 Ultra">
+        <h3><i>Samsung Galaxy S24 Ultra</i></h3>
+        <p><strong>Price:</strong> ₹98000</p>
+        <p><em>Flagship performance with an amazing camera system.</em></p>
+        <a class="button" href="https://example.com/galaxy-s24" target="_blank">Buy Now</a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="https://www.mobileana.com/wp-content/uploads/2025/06/Apple-iPhone-17-Pro-Max-Cosmic-Orange.webp" alt="iPhone 17 Pro Max">
+        <h3><i>iPhone 17 Pro Max</i></h3>
+        <p><strong>Price:</strong> ₹150000 </p>
+        <p><em>Apple's latest innovation with powerful A19 chip.</em></p>
+        <a class="button" href="https://example.com/Apple-iPhone-17-Pro-Max-" target="_blank">Buy Now</a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="https://cdn1.smartprix.com/rx-iWbhiyPHn-w1200-h1200/WbhiyPHn.webp" alt="OnePlus 12">
+        <h3><i>Vivo vivo x200 ultra</i></h3>
+        <p><strong>Price:</strong> ₹95000 </p>
+        <p><em>Fast, smooth, and beautifully designed.</em></p>
+        <a class="button" href="https://example.com/vivo-x200-ultra" target="_blank">Buy Now</a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <img src="https://i05.appmifile.com/626_item_uk/24/02/2025/f16b71145c80674ab6d5b9d59403ac2b.png" alt="OnePlus 12">
+        <h3><i>Xiaomi 15 Ultra 5G</i></h3>
+        <p><strong>Price:</strong> ₹ 104000 </p>
+        <p><em>Fast, smooth, and beautifully designed.</em></p>
+        <a class="button" href="https://example.com/Xiaomi-15-Ultra-5G" target="_blank">Buy Now</a>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqwryGot8DStRUUGv5fg5GJYu-IJxlgqqa3Q&s" alt="OnePlus 12">
+        <h3><i>Oppo Find X8</i></h3>
+        <p><strong>Price:</strong> ₹61000 </p>
+        <p><em>Fast, smooth, and beautifully designed.</em></p>
+        <a class="button" href="https://example.com/oppo-find-x8" target="_blank">Buy Now</a>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product">
+        <img src="https://img-prd-pim.poorvika.com/cdn-cgi/image/width=500,height=500,quality=75/product/Vivo-v60-5g-moonlit-blue-12gb-256gb-Back-View.png" alt="OnePlus 12">
+        <h3><i>Vivo V60</i></h3>
+        <p><strong>Price:</strong> ₹39000 </p>
+        <p><em>Fast, smooth, and beautifully designed.</em></p>
+        <a class="button" href="https://example.com/vivo-v60" target="_blank">Buy Now</a>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <!-- Media Section -->
+  <section id="media">
+    <h2><b>Watch Our Mobile Showcase</b></h2>
+    <video width="320" height="240" controls>
+      <source src="videoplayback.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2 style="margin-top: 40px;"><b>Customer Feedback (Audio)</b></h2>
+    <audio controls>
+      <source src="New-Bollywood-Instrumental.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2><b>Contact Us</b></h2>
+    <p>Need help or more info? <a href="mailto:support@mobilezone.com">Email our support team</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MobileZone. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
