@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking</title>
+    <style>
+        /* Set the background image */
+        body {
+            background-image: url('https://wallpapers.com/images/featured/hotel-background-sdr508awonqxixqe.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the container for the booking form */
+        .booking-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6347; /* Tomato color */
+            border: none;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4500; /* Darker Tomato */
+        }
+
+        .confirmation-message {
+            text-align: center;
+            font-size: 1.3em;
+            margin-top: 20px;
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="booking-container">
+        <h1>Restaurant Booking</h1>
+        <form id="bookingForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="people">Number of People</label>
+            <input type="number" id="people" name="people" min="1" placeholder="Enter number of people" required>
+
+            <label for="booking-time">Booking Date & Time</label>
+            <input type="datetime-local" id="booking-time" name="booking-time" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <div class="confirmation-message" id="confirmationMessage"></div>
+    </div>
+
+    <script>
+        // Handle form submission
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Collect form data
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const people = document.getElementById("people").value;
+            const bookingTime = document.getElementById("booking-time").value;
+
+            // Display a confirmation message
+            const confirmationMessage = `
+                Thank you, ${name}! Your booking for ${people} people on ${bookingTime} has been confirmed.
+                A confirmation email will be sent to ${email}.
+            `;
+            document.getElementById("confirmationMessage").textContent = confirmationMessage;
+
+            // Clear form after submission
+            document.getElementById("bookingForm").reset();
+        });
+    </script>
+
+</body>
+</html>
