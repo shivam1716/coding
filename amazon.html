@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon Clone</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+      }
+      .Logo {
+        width: 50px;
+        height: 50px;
+      }
+      .navbar {
+        background-color: #232f3e; /* Amazon dark blue */
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 18px;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+       .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 30px;
+      }
+
+      .product {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        text-align: center;
+      }
+
+      .product img {
+        width: 20%;
+        height: 50px;
+        object-fit: contain;
+      }
+
+      .product h3 {
+        font-size: 18px;
+        margin: 10px 0 5px 0;
+      }
+
+      .product p {
+        color: green;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .product button {
+        background-color: #ff9900;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .product button:hover {
+        background-color: #e68a00;
+      }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png" alt="Amazon Logo">
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Cart</a>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <h1>Welcome to Amazon Shopping</h1>
+
+        <!-- Product Tables -->
+        <div class="table-container">
+            
+            <!-- Table 1: Electronics -->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Electronics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2024/12/2-1.webp?ssl=1 alt="Electronics Item 1">
+                            <div class="item-name">MACBOOK AIR</div>
+                            <div class="item-price">₹96000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDVCXbM7zNJJ2sn9ZvPPCbA6_VnUVAIgAIA&s" alt="Electronics Item 2">
+                            <div class="item-name">LENOVO THINKPAD E16</div>
+                            <div class="item-price">₹70000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/418659138/LF/MG/CI/69654469/galaxy-book-4-3962-cm-intel-core-i7-16-gb-intel-iris-xe-graphics.jpg" alt="Electronics Item 3">
+                            <div class="item-name">GALAXY BOOK 4</div>
+                            <div class="item-price">₹65000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://media.wired.com/photos/60f72daa3b922f01a2083b7e/191:100/w_1280,c_limit/Gear-Dell-XPS-13-2021.jpg?mbid=social_retweet" alt="Electronics Item 4">
+                            <div class="item-name">DELL XPS</div>
+                            <div class="item-price">₹208000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Table 2: Mobiles -->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">MOBILES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://contentstatic.techgig.com/photo/115740261/a-shocking-new-design-trend-for-apple-iphone-17-pro-but-with-a-catch.jpg?11338" alt="Mobiles Item 1">
+                            <div class="item-name">IPHONE 17 PRO</div>
+                            <div class="item-price">₹134900</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://img-prd-pim.poorvika.com/prodvarval/redmi-note-13-pro-5g-white-thumbnail.png" alt="Mobiles Item 2">
+                            <div class="item-name">REDMI 13 NOTE PRO</div>
+                            <div class="item-price">₹21999</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUBu8wutjb4LL-nhonnmM6NbjOQeEPtU04iw&s" alt="Mobiles Item 3">
+                            <div class="item-name">SAMSUNG S24 </div>
+                            <div class="item-price">39999</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://www.gizmochina.com/wp-content/uploads/2024/10/Vivo-X200-Pro-Mini-1-500x500.jpg?x70461" alt="Mobiles Item 4">
+                            <div class="item-name">VIVO X200 ULTRA</div>
+                            <div class="item-price">₹96000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+            <!-- Table 3: Washing Machines -->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">WASHING MACHINE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7kutjjua4iaJP4LPOrLWQfSFCMRUAvr5XMQ&s" alt="Washing Machine Item 1">
+                            <div class="item-name">VOLTAS BEKO TOP</div>
+                            <div class="item-price">₹12000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://whirlpoolindia.vtexassets.com/arquivos/ids/167929-800-auto?v=638803960528770000&width=800&height=auto&aspect=true" alt="Washing Machine Item 2">
+                            <div class="item-name">WHIRPOOL MAGIC CLEAN PRO</div>
+                            <div class="item-price">₹14000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://mahajanelectronics.com/cdn/shop/files/25403974_WGA2341SIN_PGA12_def.webp?v=1755415148&width=1974" alt="Washing Machine Item 3">
+                            <div class="item-name">BOSH AFLW </div>
+                            <div class="item-price">36000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://media.tatacroma.com/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/310671_0_xzma69.png" alt="Washing Machine Item 4">
+                            <div class="item-name">SAMSUNG FAFLW</div>
+                            <div class="item-price">₹44000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                    </tr>
+            <!-- Table 4: PERFUMES -->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">PERFUME</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjqJw-Uw0vKmfSbMwSJ4p2aVAc8NVFrWuRGg&s" alt="Perfume Item 1">
+                            <div class="item-name">DENVER CALIBER</div>
+                            <div class="item-price">₹288</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://media.landmarkshops.in/cdn-cgi/image/h=1125,w=1125,q=85,fit=cover/lifestyle/1000012545682-1000012545681_02-2100.jpg" alt="Perfume 2">
+                            <div class="item-name">BOSS PARFUM</div>
+                            <div class="item-price">₹7500</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://armafperfume.com/cdn/shop/products/CDNIntenserMen105ml-3_1024x1024.jpg?v=1716027227" alt="Perfume Item 3">
+                            <div class="item-name">Armaf Club De Nuit Intense EDP </div>
+                            <div class="item-price">6000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                         <td>
+                            <img src="https://media.landmarkshops.in/cdn-cgi/image/h=1125,w=1125,q=85,fit=cover/lifestyle/1000011140665-1000011140664_04-2100.jpg" alt="Perfume Item 4">
+                            <div class="item-name">Yves Saint Laurent Libre EAU DE PERFUM</div>
+                            <div class="item-price">₹12000</div>
+                        </td>
+                        <td>
+                            <button class="btn-buy">Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>            
+                       
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+</html>
