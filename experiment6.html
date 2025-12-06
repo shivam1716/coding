@@ -1,68 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSS Box Model</title>
-<style>
-  body {
-    background-color: #001f3f; 
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  h1 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .container {
-    text-align: center;
-  }
-  :root {
-    --gap: 40px; 
-  }
-  .margin {
-    background-color: #ff6f4e;
-    padding: var(--gap);
-  }
-  .border {
-    background-color: #1cb5e0;
-    padding: var(--gap);
-  }
-  .padding {
-    background-color: #ffd966;
-    padding: var(--gap);
-  }
-  .content {
-    background-color: #16d2b2;
-    padding: var(--gap);
-  }
-  .box-label {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f5f7;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+  
+      font-size: 24px;
+      font-weight: bold;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    /* Main content */
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    /* Product card */
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      background-color: #f9f9f9;
+      padding-left: 10px;
+      padding right -50px; ;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 14px;
+      margin: 8px 0 15px 0;
+    }
+
+    .price {
+      color: #008000;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 0 0 8px 8px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #005bb5;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1><u><b>CSS Box Model</u></b></h1>
-    <div class="margin">
-      <div class="box-label">Margin</div>
-      <div class="border">
-        <div class="box-label">Border</div>
-        <div class="padding">
-          <div class="box-label">Padding</div>
-          <div class="content">
-            <div class="box-label">Content</div>
-          </div>
-        </div>
+
+  <!-- Navbar -->
+  <div class="navbar">ShopEasy</div>
+
+  <!-- Main Product Card -->
+  <div class="main">
+    <div class="card">
+      <img src="shirt.png" alt="T-Shirt">
+      <div class="card-content">
+        <h3>Classic Cotton T-Shirt</h3>
+        <p>Soft, breathable cotton. Regular fit. Available in multiple colors.</p>
+        <span class="price">₹799</span>
+        <span class="old-price">₹1,199</span>
       </div>
+      <button class="btn">Add to Cart</button>
     </div>
   </div>
+
 </body>
 </html>
