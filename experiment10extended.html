@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            width: 100%;
+            background: #1c1c1c;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        .nav-links li a:hover {
+            color: #a8d1ff;
+        }
+        .nav-right {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-right a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-right a:hover {
+            color: #a8d1ff;
+        }
+        .menu-icon {
+            font-size: 28px;
+            display: none;
+            cursor: pointer;
+        }
+        .hero {
+            padding: 40px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 455px) {
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #1c1c1c;
+                width: 100%;
+                text-align: center;
+                padding: 20px 0;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .menu-icon {
+                display: block;
+            }
+            .nav-right {
+                display: none; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="#" class="cart">Cart 🛒</a>
+            <a href="#" class="login">Login</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <h1>Welcome to ShopEase!</h1>
+        <p>Your one-stop destination for all shopping needs.</p>
+    </section>
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+<footer style="text-align: center;">
+  &copy; SHIVAM | 2025B01010166 .
+</footer>
+</body>
+</html>
